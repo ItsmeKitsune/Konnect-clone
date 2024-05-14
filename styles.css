@@ -1,0 +1,173 @@
+@import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Druk Wide Bold', sans-serif;
+    background: linear-gradient(135deg,#663186,#d18cfc);
+    background-color: #985fbb;
+    min-height: 100vh;
+    color: white;
+}
+
+main{
+    background-color: #0a0a0b79;
+    border-radius: 3vw;
+    margin: 3vw auto;
+    padding: 2vw;
+    max-width: 832px;
+}
+
+.header{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    padding: 2vw;
+}
+
+#profile-picture{
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.header a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.4);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 2px;
+    position: relative;
+}
+
+.header a:nth-of-type(1):hover{
+    background-color: #6441A5;
+}
+.header a:nth-of-type(2):hover{
+    background-color: #FF0000;
+}
+.header a:nth-of-type(3):hover{
+    background-color: #000000;
+}
+.header a:nth-of-type(4):hover{
+    background-image: linear-gradient(
+  135deg,
+  hsl(230deg 77% 58%) 0%,
+  hsl(244deg 62% 58%) 8%,
+  hsl(260deg 53% 53%) 17%,
+  hsl(276deg 51% 47%) 25%,
+  hsl(305deg 51% 44%) 33%,
+  hsl(325deg 59% 49%) 42%,
+  hsl(340deg 75% 54%) 50%,
+  hsl(350deg 78% 59%) 58%,
+  hsl(1deg 83% 63%) 67%,
+  hsl(11deg 90% 61%) 75%,
+  hsl(22deg 92% 66%) 83%,
+  hsl(33deg 96% 71%) 92%,
+  hsl(43deg 100% 75%) 100%
+);
+}
+
+.small-logos{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.indice a{
+    color: #CBC9CF;
+    position: relative; /* Establishes positioning context for pseudo-elements */
+    display: inline-block; /* Ensures the anchor takes up only the necessary space */
+    margin: 0 10px;
+    padding: 5px 5px; /* Add padding to give some space around the text */
+    text-decoration: none; /* Remove underline by default */
+    justify-content: center;
+    font-size: 12px;
+}
+
+.indice a:hover{
+    cursor: pointer;
+}
+
+.indice a::before {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position the pseudo-element absolutely relative to the anchor */
+    top: 50%; /* Position the pseudo-element at the top */
+    left: 50%; /* Position the pseudo-element at the left */
+    transform: translate(0,0);
+    width: 0; /* Initially set width to 0 */
+    height: 0; /* Set height to match the anchor's height */
+    background-color: rgba(50,50,50,40%); /* Set background color for the pseudo-element */
+    z-index: -1; /* Move the pseudo-element behind the anchor text */
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease; /* Apply transition effect to the width property */
+    border-radius: 10px
+}
+
+.indice a:hover::before {
+    width: 120%; /* Expand the pseudo-element to 100% width when hovered */
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    border-radius: 10px
+}
+
+.container {
+    background-color: rgba(20, 20, 20, 50%);
+    border-radius: 10px;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+}
+
+.container h2{
+    font-size:18px;
+    margin: 0;
+    padding: 10px;
+}
+
+.mini-logos{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.logos{
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+.container h3{
+    display: inline-block;
+    font-size: 12px;
+    color: #b1afb6;
+}
+
+.sub-container{
+    display: inline-block;
+    background-color: #232223;
+    border-radius: 10px;
+    padding: 8px 12px;
+    justify-content: center;
+}
+
+.sub-container p{
+    display: inline-block;
+    margin: 0px;
+    vertical-align: middle;
+}
