@@ -178,6 +178,12 @@ h1{
     border-radius: 10px;
     padding: 16px;
     gap: 16px;
+    box-sizing: border-box;
+}
+
+.sub-container.peripheral{
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .sub-container p{
